@@ -1,0 +1,119 @@
+
+
+body{
+
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-row: 10vh 40vh 40vh 10vh;
+	grid-template-areas: "nav nav nav" 
+						 "header header header" 
+						 "main main main " 
+						 "footer footer footer" ;
+						 
+}
+
+
+
+@media only screen and (min-width: 768px){
+	body{
+
+		grid-template-columns:repeat(2, 1fr);
+		grid-template-row: 10vh 30vh 40vh 20vh;
+		grid-template-areas: "nav nav"
+						     "header header"
+						     "main main"
+						     "footer footer footer footer ";
+
+	}
+
+}
+
+@media only screen and (min-width: 1024px){
+	body{
+		grid-template-columns:repeat(3, 1fr);
+		grid-template-row: 15vh 35vh 40vh 10vh; ;
+	    grid-template-areas: "nav nav nav  "
+						 "header header header "
+						 "main main main main  "
+						 "footer footer footer ";
+
+
+}
+
+
+
+
+	
+
+
+
+nav {
+
+grid-area: nav;
+}
+
+header {
+
+grid-area: header;
+}
+
+main{
+
+grid-area:main;
+}
+
+footer {
+grid-area: footer;
+
+}
+
+
+
+
+
+#imgCarrusel {
+
+background-color: grey;
+}
+
+nav img{
+
+	width: 100px;
+
+}
+
+header div div img{
+
+		width: 80%;
+		height: 80%;
+		margin: 1px;
+}
+
+footer div div div h5{
+
+	display:flex;
+	background-color: black;
+	color: white;
+	justify-content: center;
+
+
+}
+
+footer div div div div{
+
+    		display:grid;
+            justify-content: space-around;
+            background-color:black;
+            width:100%;
+            padding: 1px;
+            border: 1100px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+nav {
+  background-color: red; }
+  nav img {
+    width: 100%; }
+  nav ul {
+    display: flex; }
+    nav ul li {
+      list-style: none;
+      width: 25%; }
+      nav ul li a {
+        text-decoration: none;
+        color: white; }
+
+body {
+  background-color: black; }
+
+header h3 {
+  color: grey;
+  text-align: center; }
+
+header div {
+  display: flex;
+  justify-content: space-between; }
+  header div #divPadre {
+    height: 100px;
+    width: 100px;
+    text-align: left; }
+  header div #divHijo {
+    height: 100px;
+    width: 350px;
+    margin: 10px; }
